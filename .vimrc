@@ -11,6 +11,7 @@ set tabstop=4
 set cursorline              "为光标所在行加下划线
 set number                  "显示行号
 set autoread                "文件在Vim之外修改过，自动重新读入
+set mouse=a
 
 set ignorecase              "检索时忽略大小写
 "set fileencodings=uft-8,gbk "使用utf-8或gbk打开文件
