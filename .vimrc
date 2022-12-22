@@ -1,6 +1,16 @@
 syntax on                      "语法支持
 filetype plugin indent on
 
+"change cursor to pipe when in editing mode
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+"fix delay when changing cursor
+set ttimeout
+set ttimeoutlen=1
+set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
+set ttyfast
+
 "common conf {{             通用配置
 set ai                      "自动缩进
 set bs=2                    "在insert模式下用退格键删除
